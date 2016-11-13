@@ -1,0 +1,32 @@
+
+.contactDetails {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: 0 auto;
+  height: 40vh;
+}
+
+.cartDetails {
+  height: 40vh;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+
+}
+
+.wishList {
+    display:inline-block;
+    padding: 20px;
+}
+
+.wishItem {
+    margin: 2px;
+}
+
+.wish {
+    margin-bottom: 5px;
+}

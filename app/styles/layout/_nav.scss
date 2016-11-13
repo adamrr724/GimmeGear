@@ -1,0 +1,68 @@
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 40px;
+  transition: all 300ms linear;
+  &:hover {
+    transition: all 300ms linear;
+    letter-spacing: 4px;
+  }
+}
+
+.headerBar {
+  border-bottom: 2px solid black;
+  margin-bottom: 5%;
+  min-height: 145px;
+  padding: 1.5% 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    border-bottom: 2px solid transparent;
+    a {
+      border: 2px solid transparent;
+      padding: 2% 5%;
+      transition: all 100ms linear;
+      &:hover {
+        transition: all 400ms linear;
+        border: 2px solid black;
+      }
+    }
+  }
+}
+
+.typeNav {
+  border: 1px solid black;
+  background-color: rgba(0,0,0,0.8);
+  padding: 2% 5%;
+  width: 94.5%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  a {
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: all 300ms linear;
+    &:hover {
+      transition: all 300ms linear;
+      border-bottom: 2px solid white;
+    }
+  }
+}
+
+.subNav {
+  border: 1px solid black;
+  background-color: rgba(0,0,0,0.8);
+  padding: 1% 2%;
+  margin: 0 auto;
+  color: white;
+  letter-spacing: 2px;
+}

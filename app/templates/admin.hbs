@@ -1,0 +1,17 @@
+<h1>Seller's Page</h1>
+<hr>
+<div class="productList">
+  {{#each model as |product|}}
+  <div class="adminProductTile">
+    {{product-tile product=product}}
+    <span class="editReviews">{{#link-to 'review' product.id}}Edit Reviews{{/link-to}} </span>
+    <br>
+    <br>
+    {{update-product product=product updateProduct="updateProduct"}}<br>
+    <button {{action 'delete' product}}>Delete</button>
+  </div>
+  {{/each}}
+</div>
+
+<hr>
+{{new-product product=model saveProduct="saveProduct"}}

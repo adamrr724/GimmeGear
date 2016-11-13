@@ -1,0 +1,22 @@
+<div class="pageWrap">
+  <div class="headerBar">
+    <div class="container">
+      {{#link-to 'index'}}<h1 class="logo">GimmeGear</h1>{{/link-to}}
+      <div class="navigation">
+        <div class="cartNav">
+          {{#link-to 'buyer'}}Buy{{/link-to}}
+          {{#link-to 'admin'}}Sell{{/link-to}}
+          {{cart-tally}}{{#link-to 'cart'}}Wish List{{/link-to}}
+        </div>
+        {{#link-to 'contact'}}Contact{{/link-to}}
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    {{outlet}}
+  </div>
+  <div class="footer">
+    <hr>
+    <p>Copyright| &copy; 2016</p>
+  </div>
+</div>

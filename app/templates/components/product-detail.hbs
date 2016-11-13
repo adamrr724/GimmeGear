@@ -1,0 +1,20 @@
+<div class="productDetail">
+  <div class="productImage">
+    <img src="{{product.image}}">
+  </div>
+  <div class="productInfo">
+    <h1>{{product.name}}</h1>
+    <h3>${{product.price}}</h3>
+    <h4>Original Cost: ${{product.color}}</h4>
+    <h4>Condition: {{product.size}}</h4>
+    <h4>Product Details:</h4>
+    <p>
+      {{product.details}}
+    </p>
+    {{#if itemAdded}}
+      <p><i class="fa fa-check"></i>Item Added to Cart</p>
+    {{else}}
+      <button {{action 'addToCart' product}}>Add to Cart</button>
+    {{/if}}
+  </div>
+</div>

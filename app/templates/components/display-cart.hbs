@@ -1,0 +1,25 @@
+<div class="subNav">
+  <h3>Wish List</h3>
+</div>
+<h4>Shopping Cart</h4>
+<ul>
+  {{#each shoppingCart.items as |item|}}
+    <li class="cartItem">{{item.name}} -- ${{item.price}}.00</li><br>
+    <button {{action 'remove' item}}>Remove from List</button><br>
+  {{/each}}
+  <p><strong>Total Price:</strong> ${{total-price shoppingCart.items}}.00</p>
+</ul>
+
+<h4 class="wish">My Wish List</h4>
+<div>
+<ul class="list">
+  {{#each ask as |item|}}
+      <div class="wishList">
+        <h4 class="wishItem">Item Name: {{item.name}}</h4>
+        <li class="wishItem">Condition: {{item.condition}}</li>
+        <li class="wishItem">Price: {{item.price}}</li>
+        <button {{action 'askRemove' item}}>Remove from List</button><br>
+      </div>
+  {{/each}}
+</ul>
+</div>

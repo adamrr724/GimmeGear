@@ -1,0 +1,9 @@
+{{product-detail product=model}}
+<br>
+<hr>
+{{new-review product=model saveReview="saveReview"}}
+
+<h3>Reviews</h3>
+{{#each model.reviews as |review|}}
+  {{review-tile review=review}}
+{{/each}}

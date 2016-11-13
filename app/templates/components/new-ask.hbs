@@ -1,0 +1,24 @@
+<div class="productForm">
+  <form>
+    <label for="name">Item Name: </label>
+    {{input value=name}}
+    <label for="price">Sell Price: </label>
+    {{input value=price}}
+    <label for="condition">Condition: </label>
+    {{#x-select value=condition}}
+      {{#x-option value="Bad"}}Bad{{/x-option}}
+      {{#x-option value="Average"}}Average{{/x-option}}
+      {{#x-option value="Good"}}Good{{/x-option}}
+    {{/x-select}}
+    <label for="type">Type: </label>
+    {{#x-select value=type}}
+      {{#x-option value="Camera and Lenses"}}Camera and Lenses{{/x-option}}
+      {{#x-option value="Lighting"}}Lighting{{/x-option}}
+      {{#x-option value="Audio"}}Audio{{/x-option}}
+      {{#x-option value="Support"}}Support{{/x-option}}
+    {{/x-select}}
+    <label for="image">Image URL: </label>
+    {{input value=image}}
+    <button {{action 'saveAsk' ask}}>Post Buyer Ask</button>
+  </form>
+</div>

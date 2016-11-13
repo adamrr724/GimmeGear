@@ -1,0 +1,11 @@
+<div class="contactDetails">
+  <div class="contactNav">
+    <h1>Contact Page</h1>
+    {{#link-to 'contact.phone'}}Phone Number  <i class="fa fa-phone"></i>{{/link-to}} <br><br>
+    {{#link-to 'contact.email'}}Email  <i class="fa fa-envelope"></i>{{/link-to}} <br><br>
+    {{#link-to 'contact.address'}}Corporate Address  <i class="fa fa-home"></i>{{/link-to}}
+  </div>
+  <div class="contactInfo">
+    {{outlet}}
+  </div>
+</div>

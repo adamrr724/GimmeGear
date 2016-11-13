@@ -1,0 +1,39 @@
+{{#if updateProductForm}}
+<div class="productForm">
+  <form>
+    <label for="name">Name: </label>
+    {{input value=product.name}}
+    <label for="price">Price: </label>
+    {{input value=product.price}}
+    <label for="details">Details: </label>
+    {{input value=product.details}}
+    <label for="size">Size: </label>
+    {{#x-select value=product.size}}
+      {{#x-option value="small"}}Small{{/x-option}}
+      {{#x-option value="medium"}}Medium{{/x-option}}
+      {{#x-option value="large"}}Large{{/x-option}}
+    {{/x-select}}
+    <br>
+    <label for="type">Type: </label>
+    {{#x-select value=product.type}}
+      {{#x-option value="shirt"}}Shirt{{/x-option}}
+      {{#x-option value="pants"}}Pants{{/x-option}}
+      {{#x-option value="shoes"}}Shoes{{/x-option}}
+      {{#x-option value="coat"}}Coat{{/x-option}}
+    {{/x-select}}
+    <label for="color">Color: </label>
+    {{#x-select value=product.color}}
+      {{#x-option value="black"}}Black{{/x-option}}
+      {{#x-option value="white"}}White{{/x-option}}
+      {{#x-option value="blue"}}Blue{{/x-option}}
+      {{#x-option value="green"}}Green{{/x-option}}
+    {{/x-select}}
+    <label for="image">Image URL: </label>
+    {{input value=product.image}}
+    <button {{action 'updateProduct' product}}>Save</button>
+  </form>
+  <button {{action 'toggleDetail'}}>Cancel</button>
+</div>
+{{else}}
+  <button {{action 'toggleDetail'}}>Update Product</button>
+{{/if}}

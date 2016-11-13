@@ -1,0 +1,27 @@
+.reviewItem {
+  border: 1px solid lightgrey;
+  padding: 2%;
+  margin-bottom: 2%;
+}
+
+.reviewForm {
+  margin-top: 15px;
+  border: 1px solid lightgrey;
+  padding: 2% 4%;
+  form {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  h3 {
+    margin: 0px;
+  }
+  input {
+    height: 30px;
+  }
+  .reviewContent {
+    width: 35em;
+  }
+}

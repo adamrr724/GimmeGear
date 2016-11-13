@@ -1,0 +1,11 @@
+<div class="productTile">
+  {{#link-to 'product' product.id}}
+  <div class="productImage">
+    <img src="{{product.image}}">
+  </div>
+  <div class="productInfo">
+    <h3>{{product.name}}</h3>
+    <p>${{product.price}}.00</p>
+  </div>
+  {{/link-to}}
+</div>

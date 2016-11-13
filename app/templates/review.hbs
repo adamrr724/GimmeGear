@@ -1,0 +1,6 @@
+<ul>
+  {{#each model.reviews as |review|}}
+    {{review-tile review=review}}
+    <button {{action 'delete' review}}>Delete Review</button>
+  {{/each}}
+</ul>
